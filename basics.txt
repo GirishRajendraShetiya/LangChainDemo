@@ -1,0 +1,47 @@
+Artificial Intelligence > Machine Learning > Deep Learning > NLP > Generative AI
+
+How Gen AI works ?
+
+Data collection > Data preparation > Model (Algorithm) selection > Train the model on 80% of collected data >
+Evaluate the model by the remaining 20% of data > Parameter Tuning > Prediction (in case of AI / ML) & New Content (in case of Gen AI).
+
+Eg. GPT (Generative Pre-trained Transformer [consists of encoder and decoder which further has attention and feedback]) used by ChatGPT (OpenAI).
+
+OpenAI has created various models (Text (ChatGPT), Images, Audio, etc.)
+OpenAI APIs could be used for our purposes.
+
+Open source models include Llama (3.1 version trained with 8 billion parameters), Gemma (2 billion parameters), Mistral (7 billion parameters).
+
+Ollama is the registry of all the Large Language Models (LLMs) - To run LLMs locally, managing downloads,
+and opening HTTP API endpoints for the models.
+
+Basic commands:
+
+ollama list - To list all the available downloaded LLMs.
+ollama pull <llm_name> - To download the specified LLM.
+ollama run <llm_name> - To run the downloaded LLM.
+ollama rm <llm_name> - To remove the specified LLM from the system.
+
+LangChain - An open-source framework which simplifies the process of developing LLM powered applications.
+
+Packages to install: langchain, langchain-openai, langchain-ollama, langchain-google-genai, langchain-community
+
+On Windows:
+Use the search bar in the Start menu to find “Edit the system environment variables”.
+Click “Environment variables”
+Use the upper “New…” button to add a User variable
+Create a new variable called OPENAI_API_KEY and set the value to the secret key you got from your account.
+
+For Mac or Linux:
+
+Find the .bashrc, .bash_profile, or .zshrc in your home directory
+Open the file in a text editor
+Add a new line to the file:
+export OPENAI_API_KEY=<your secret key>
+
+On New Macs
+
+vi .zprofile
+export OPENAI_API_KEY=<your secret key>
+source .zprofile
+Restart your IDE
